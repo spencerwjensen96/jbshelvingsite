@@ -1,13 +1,10 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom'
-import { Link } from "react-router-dom";
 import styled from "styled-components"
 
 export default function Header(props) {
 
 return(
   <HeaderWrapper>
-    <Spacer></Spacer>
     <StyledHeader href={props.to}>
         {props.headerText}
     </StyledHeader> 
@@ -55,12 +52,14 @@ const Nav = styled.ul`
   }
 `
 const StyledHeader = styled.a`
+  height: 100%;
+  padding: 1rem;
+  padding-left: 10%;
   font-size: 1.2rem;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   display: block;
   float: left;
-  padding: 1em;
   color: white;
   @media all and (max-width: 600px) {
     display: none; 
