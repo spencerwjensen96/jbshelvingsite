@@ -3,11 +3,14 @@ import styled from 'styled-components'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from './compnents/Header';
+import Footer from './compnents/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+
+//blue = #102c8c
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
           <Route path="/home">
             <Header headerText="Home Page" to="/"></Header>
             <Home />
+            <Footer/>
           </Route>
           <Route path="/about">
             <Header headerText="About Us" to="/about"></Header>
@@ -47,6 +51,7 @@ function App() {
 }
 
 const siteWrapper = styled.div`
+position: relative;
 padding: 0;
 height: 100vh;
 display: flex;

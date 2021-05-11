@@ -19,20 +19,22 @@ return(
         <StyledLink href="/products">
           Products
         </StyledLink>
-        <StyledLink href="/contact">
+        <StyledLink href="/contact" style={{paddingRight: '10%'}}>
           Contact
         </StyledLink>       
-      <Spacer/>
     </Nav>
   </HeaderWrapper>
   );
 }
 
-const Spacer = styled.div` width: 10vw`
+// const Spacer = styled.div` 
+//   width: 10vw
+
+// `
 
 const HeaderWrapper = styled.div`
   margin: 0; 
-  background: #1565C0;  
+  background-image: linear-gradient(#102c8c, #102c8c, #0e246e);  
 `
 
 const Nav = styled.ul`
@@ -42,7 +44,7 @@ const Nav = styled.ul`
 
   list-style: none;
   margin: 0; 
-  background: #1565C0;
+  background-image: linear-gradient(#102c8c, #102c8c, #0e246e);   
   @media all and (max-width: 800px) {
     justify-content: space-around;
   }
@@ -61,7 +63,12 @@ const StyledHeader = styled.a`
   display: block;
   float: left;
   color: white;
-  @media all and (max-width: 600px) {
+  &:hover {
+    opacity: 0.5;
+    text-decoration: none;
+    color: white;
+  }
+  @media all and (max-width: 800px) {
     display: none; 
   }
 `
@@ -74,6 +81,8 @@ const StyledLink = styled.a`
 
   &:hover {
     opacity: 0.5;
+    text-decoration: none;
+    color: white;
   }
 
   @media all and (max-width: 600px) {
@@ -81,8 +90,9 @@ const StyledLink = styled.a`
     padding: 10px;
     border-top: 1px solid rgba(255, 255, 255,0.3); 
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-  }
-  &:last-of-type{
-    border-bottom: none;
+    &:last-of-type{
+      border-bottom: none;
+      padding-right: 10px !important;
+    }
   }
 `
