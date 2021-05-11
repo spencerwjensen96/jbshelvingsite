@@ -20,7 +20,6 @@ export default function Home(props) {
 
     return (
         <Wrapper>
-            {/**I want a carosel here with the front logo and then the 2 slides from the products page of the original site */}
             <Carousel fade>
                 <Carousel.Item>
                     <Jumbotron 
