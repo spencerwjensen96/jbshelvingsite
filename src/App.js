@@ -1,5 +1,4 @@
 import './App.css';
-//import styled from 'styled-components'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from './compnents/Header';
@@ -12,6 +11,13 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
 //blue = #102c8c
+
+//TODO
+//reload problem on products page
+//cursor over picture for names
+//content?
+//connect it to Gatsby and Google analytics
+//host
 
 function App() {
 
@@ -93,14 +99,5 @@ function App() {
       
   );
 }
-
-// const siteWrapper = styled.div`
-// position: relative;
-// padding: 0;
-// height: 100vh;
-// display: flex;
-// flex-direction: column;
-// justify-content: center;
-// `
 
 export default App;
