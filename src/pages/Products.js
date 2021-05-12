@@ -129,7 +129,7 @@ export default function Products(props) {
                                 <br></br>
                             </address>
                             <address>
-                                <strong title="Phone">Phone: </strong>
+                                <strong title="Phone">Call or Text: </strong>
                                 (801)-223-9173
                                 <br></br>
                                 <strong title="Email">Email: </strong>
