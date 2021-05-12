@@ -13,9 +13,8 @@ import NotFound from './pages/NotFound';
 //blue = #102c8c
 
 //TODO
-//reload problem on products page
+//contact form??
 //cursor over picture for names
-//content?
 //connect it to Gatsby and Google analytics
 //host
 

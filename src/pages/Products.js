@@ -119,22 +119,21 @@ export default function Products(props) {
                 </Row>
                 <Row>
                     <Col size={1} margin={'2rem'}>
-                        <img width="350px" src={workers} alt="workers" style={{boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}></img>
+                        <img width="100%" src={workers} alt="workers" style={{ boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}></img>
                     </Col>
-                    <Col size={1} margin={'2rem'} width={'350px'}>
-                    <ContactCard>
+                    <Col size={1} margin={'2rem'}>
+                    <ContactCard width="100%">
                             <CardHeader>Contact Us</CardHeader>
                             <address>
                                 <strong>Wayne Jensen</strong>
                                 <br></br>
                             </address>
                             <address>
-                                <abbr title="Phone">Phone: </abbr>
+                                <strong title="Phone">Phone: </strong>
                                 (801)-223-9173
                                 <br></br>
-                                <abbr title="Email">Email: </abbr>
+                                <strong title="Email">Email: </strong>
                                 <a href="mailto:wayne@jbshelving.com">wayne@jbshelving.com</a>
-                                <br></br>
                                 <br></br>
                             </address>
                             <Button text="Contact us for a FREE bid" to="/contact"/>
@@ -149,9 +148,11 @@ export default function Products(props) {
 
 const ContactCard = styled.div`
 background-color: white;
-
+line-height:2;
+font-size: 120%;
 border-radius: 5px;
 height: 100%;
+margin: 0rem 1.5rem 0rem 1.5rem;
 vertical-align: center;
 text-align: center;
 `
@@ -188,6 +189,7 @@ const Row = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 3rem;
+    justify-content: center;
     @media all and (max-width: 950px) {
 
         flex-flow: column wrap;
@@ -199,6 +201,7 @@ const Col = styled.div`
     flex: ${(props) => props.size};
     margin: ${(props) => props.margin};
     width: ${(props) => props.width};
+    justify-content: center;
 `
 
 const Content = styled.div`

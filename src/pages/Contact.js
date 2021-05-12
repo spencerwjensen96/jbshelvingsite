@@ -45,15 +45,13 @@ export default function Contact(props) {
                                 <br></br>
                             </address>
                             <address>
-                                <abbr title="Phone">Phone: </abbr>
+                                <strong title="Phone">Call or Text: </strong>
                                 (801)-223-9173
                                 <br></br>
-                                <abbr title="Email">Email: </abbr>
+                                <strong title="Email">Email: </strong>
                                 <a href="mailto:wayne@jbshelving.com">wayne@jbshelving.com</a>
                                 <br></br>
-                                <br></br>
                             </address>
-                            <Button text="Contact us for a FREE bid" to="/contact"/>
                           </ContactCard>
                         
                     </Col>
@@ -67,6 +65,7 @@ export default function Contact(props) {
  const ContactCard = styled.div`
     background-color: white;
     font-size: 1.2rem;
+    line-height:2;
     border-radius: 5px;
     height: 100%;
     vertical-align: center;
@@ -104,7 +103,7 @@ const Wrapper = styled.div`
 `
 
 const Content = styled.div`
-    min-height: 100vh;
+    min-height: 50vh;
     position: relative;
     padding-bottom: 2.5rem; 
     margin: 5vh 5vw 0px 5vw;

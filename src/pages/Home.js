@@ -63,12 +63,11 @@ export default function Home(props) {
                                 <br></br>
                             </address>
                             <address>
-                                <abbr title="Phone">Phone: </abbr>
+                                <strong title="Phone">Call or Text: </strong>
                                 (801)-223-9173
                                 <br></br>
-                                <abbr title="Email">Email: </abbr>
+                                <strong title="Email">Email: </strong>
                                 <a href="mailto:wayne@jbshelving.com">wayne@jbshelving.com</a>
-                                <br></br>
                                 <br></br>
                             </address>
                             <Button text="Contact us for a FREE bid" to="/contact"/>
@@ -117,7 +116,7 @@ export default function Home(props) {
 
  const ContactCard = styled.div`
     background-color: white;
-
+    line-height:2;
     border-radius: 5px;
     height: 100%;
     vertical-align: center;
