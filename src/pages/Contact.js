@@ -1,18 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Carousel from 'react-bootstrap/Carousel'
 import Jumbotron from '../compnents/Jumbotron'
 import Button from '../compnents/Button'
-import ProductCard from '../compnents/ProductCard'
 import Footer from '../compnents/Footer'
 
 //photos
 import frontImage from '../assets/images/HannahsPhotos/wood1copy.jpg'
 import mainLogo from '../assets/images/icons/Logo.png'
-import garageShelving from '../assets/images/GarageShelves/GarageShelves1.jpg'
-import basementShelving from '../assets/images/BasementShelves/BasementShelving25.jpg'
-import kitchenWise from '../assets/images/KitchenWise/KitchenWise1.jpg'
+
 
 export default function Contact(props) { 
 
@@ -83,15 +79,6 @@ export default function Contact(props) {
 
  const CardContent = styled.p`
     font-size: 1.2rem;
- `
-
- const Banner = styled.h2`
-    width: 100%;
-    text-align: center;
-    color: white;
-    background-image: linear-gradient( 45deg, #0e246e, #102c8c, #102c8c, #102c8c, #0e246e);  
-    padding: 0.5rem;
-    border-radius: 0.5rem;
  `
 
 const Row = styled.div`

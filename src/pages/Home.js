@@ -12,7 +12,7 @@ import frontImage from '../assets/images/StockPhotos/FinalPano.jpg'
 import skillSaw from '../assets/images/HannahsPhotos/skillsaw3copy.jpg'
 import furries from '../assets/images/HannahsPhotos/furries3.jpg'
 import mainLogo from '../assets/images/icons/Logo.png'
-import garageShelving from '../assets/images/GarageShelves/GarageShelves1.jpg'
+import garageShelving from '../assets/images/GarageShelves/GarageShelving1.jpg'
 import basementShelving from '../assets/images/BasementShelves/BasementShelving25.jpg'
 import kitchenWise from '../assets/images/KitchenWise/KitchenWise1.jpg'
 
@@ -84,6 +84,7 @@ export default function Home(props) {
                         <ProductCard
                             image={garageShelving}
                             title="Garage Shelving"
+                            key="garage"
                             description="Our garage shelving is our highest selling product!"
                             buttonText="Discover more ideas"
                             to="/products/garage-shelving"
@@ -92,13 +93,15 @@ export default function Home(props) {
                         <ProductCard
                             image={basementShelving}
                             title="Basement Shelving"
-                            description="Get your garage organized without compromising walking space."
+                            key="basement"
+                            description="We have the experience and tools to securely attach to concrete walls."
                             buttonText="Discover more ideas"
                             to="/products/basement-shelving"
                             ></ProductCard>
                         <ProductCard
                             image={kitchenWise}
                             title="Kitchen Solutions"
+                            key="kitchen"
                             description={["We are pleased to be partnered with ", 
                                             <i>KitchenWise of Salt Lake</i>,  
                                             "! We now offer organization solutions for your kitchen!"]}
@@ -145,7 +148,6 @@ const Row = styled.div`
     flex-wrap: wrap;
     padding-bottom: 3rem;
     @media all and (max-width: 950px) {
-
         flex-flow: column wrap;
         padding: 0;
     }

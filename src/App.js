@@ -1,5 +1,5 @@
 import './App.css';
-import styled from 'styled-components'
+//import styled from 'styled-components'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from './compnents/Header';
@@ -7,15 +7,27 @@ import Footer from './compnents/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
+import ProductsPage from './pages/ProductsPage'
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
 //blue = #102c8c
 
 function App() {
+
+  let module = require('./utils/PhotoGalleryImport');
+  let garageShelves = module.garageShelves;
+  let angleShelves = module.angleShelves;
+  let workbenches = module.workbenches;
+  let basementShelves = module.basementShelves;
+  let closetShelves = module.closetsPantries;
+  let bookShelves = module.bookShelves;
+  let lockerShelves = module.lockersMudroomShelves;
+  let otherProjects = module.otherProjects;
+
   return (
     <Router>
-      <siteWrapper>
+      <div>
         <Switch>
           <Route path="/home">
             <Header headerText="Home Page" to="/"></Header>
@@ -25,6 +37,38 @@ function App() {
           <Route path="/about">
             <Header headerText="About Us" to="/about"></Header>
             <About />
+          </Route>
+          <Route path="/products/garage-shelving">
+            <Header headerText="Products" to="/products"></Header>
+            <ProductsPage photos={garageShelves}/>
+          </Route>
+          <Route path="/products/angle-supports">
+            <Header headerText="Products" to="/products"></Header>
+            <ProductsPage photos={angleShelves}/>
+          </Route>
+          <Route path="/products/workbenches">
+            <Header headerText="Products" to="/products"></Header>
+            <ProductsPage photos={workbenches}/>
+          </Route>
+          <Route path="/products/basement-shelving">
+            <Header headerText="Products" to="/products"></Header>
+            <ProductsPage photos={basementShelves}/>
+          </Route>
+          <Route path="/products/closets-pantries">
+            <Header headerText="Products" to="/products"></Header>
+            <ProductsPage photos={closetShelves}/>
+          </Route>
+          <Route path="/products/bookshelves">
+            <Header headerText="Products" to="/products"></Header>
+            <ProductsPage photos={bookShelves}/>
+          </Route>
+          <Route path="/products/lockers-mudrooms">
+            <Header headerText="Products" to="/products"></Header>
+            <ProductsPage photos={lockerShelves}/>
+          </Route>
+          <Route path="/products/other-projects">
+            <Header headerText="Products" to="/products"></Header>
+            <ProductsPage photos={otherProjects}/>
           </Route>
           <Route path="/products">
             <Header headerText="Products" to="/products"></Header>
@@ -44,19 +88,19 @@ function App() {
           </Route>
           
         </Switch>
-      </siteWrapper>
+      </div>
     </Router>
       
   );
 }
 
-const siteWrapper = styled.div`
-position: relative;
-padding: 0;
-height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-`
+// const siteWrapper = styled.div`
+// position: relative;
+// padding: 0;
+// height: 100vh;
+// display: flex;
+// flex-direction: column;
+// justify-content: center;
+// `
 
 export default App;

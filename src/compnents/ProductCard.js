@@ -41,7 +41,7 @@ const Image = styled.img`
 `
 
 const Title = styled.p`
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     padding: 1rem;
     padding-bottom: 0;
