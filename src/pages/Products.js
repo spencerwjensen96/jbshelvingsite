@@ -133,8 +133,15 @@ export default function Products(props) {
                                 (801)-223-9173
                                 <br></br>
                                 <strong title="Email">Email: </strong>
-                                <a href="mailto:wayne@jbshelving.com">wayne@jbshelving.com</a>
+                                <a href="mailto:wayne@jbshelving.com?subject=Communication from Website
+                                        &body=I%20would%20like%20to%20request%20a%20FREE%20bid.%0D%0A%0D%0A
+                                        
+                                        Name:%0D%0A
+                                        Address:%0D%0A
+                                        Phone number:">
+                                        wayne@jbshelving.com</a>
                                 <br></br>
+                                
                             </address>
                             <Button text="Contact us for a FREE bid" to="/contact"/>
                           </ContactCard>

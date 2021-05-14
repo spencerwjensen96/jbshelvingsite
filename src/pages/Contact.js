@@ -7,9 +7,14 @@ import Footer from '../compnents/Footer'
 //photos
 import frontImage from '../assets/images/HannahsPhotos/wood1copy.jpg'
 import mainLogo from '../assets/images/icons/Logo.png'
+import Button from '../compnents/Button'
 
 
 export default function Contact(props) { 
+
+    function sendEmail (){
+        alert("send email")
+    }
 
     return (
         <Wrapper>
@@ -48,7 +53,14 @@ export default function Contact(props) {
                                 (801)-223-9173
                                 <br></br>
                                 <strong title="Email">Email: </strong>
-                                <a href="mailto:wayne@jbshelving.com">wayne@jbshelving.com</a>
+                                <a href="mailto:wayne@jbshelving.com?subject=Communication from Website
+                                        &body=I%20would%20like%20to%20request%20a%20FREE%20bid.%0D%0A%0D%0A
+                                        
+                                        Name:%0D%0A
+                                        Address:%0D%0A
+                                        Phone number:" 
+                                    style={{textDecoration: 'none'}}>
+                                        wayne@jbshelving.com</a>
                                 <br></br>
                             </address>
                           </ContactCard>
