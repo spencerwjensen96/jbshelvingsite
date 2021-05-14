@@ -93,9 +93,9 @@ const ActivePicture = styled.img`
     margin: 10vh auto 5vh auto ;
     border: 1px solid black;
     
-    max-${props => props.orient}: 100%;
-    ${props => props.orient}: 100%;
-    //height: 100%;
+   // max-${props => props.orient}: 100%;
+    //${props => props.orient}: 100%;
+    height: 90vh;
 `
 
 const Picture = styled.img`

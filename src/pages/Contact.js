@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Jumbotron from '../compnents/Jumbotron'
-import Button from '../compnents/Button'
 import Footer from '../compnents/Footer'
 
 //photos

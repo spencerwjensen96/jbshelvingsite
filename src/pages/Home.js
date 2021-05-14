@@ -105,7 +105,7 @@ export default function Home(props) {
                                             <i>KitchenWise of Salt Lake</i>,  
                                             "! We now offer organization solutions for your kitchen!"]}
                             buttonText="Discover more ideas"
-                            to="www.kitchenwise.com"
+                            to="kitchenwise"
                             ></ProductCard>
                 </Row>
             </Content>

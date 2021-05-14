@@ -87,6 +87,10 @@ function App() {
             <Header headerText="" to="/not-found"></Header>
             <NotFound/>
           </Route>
+          <Route path='/kitchenwise' component={() => { 
+              window.location.href = 'http://www.kitchenwise.com'; 
+              return null;
+          }}/>
           <Route path="/">
             <Header headerText="Home Page" to="/"></Header>
             <Home/>

@@ -4,7 +4,7 @@ import styled from "styled-components"
 export default function Button(props) {
 
     return(
-        <ButtonWrapper href={props.to}>
+        <ButtonWrapper target="_blank" href={props.to}>
             {props.text}
         </ButtonWrapper>
     )
