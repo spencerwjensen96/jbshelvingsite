@@ -64,10 +64,10 @@ export default function Home(props) {
                             </address>
                             <address>
                                 <strong title="Phone">Call or Text: </strong>
-                                (801)-223-9173
+                                <a href="tel:8012239173">(801)-223-9173</a>
                                 <br></br>
                                 <strong title="Email">Email: </strong>
-                                <a href="mailto:wayne@jbshelving.com?subject=Communication from Website
+                                <a href="mailto:wayne@jbshelving.com?subject=Bid Request - JB Shelving Website
                                         &body=I%20would%20like%20to%20request%20a%20FREE%20bid.%0D%0A%0D%0A
                                         
                                         Name:%0D%0A

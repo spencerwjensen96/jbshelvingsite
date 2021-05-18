@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import styled from 'styled-components'
 
 import Header from './compnents/Header';
 import Footer from './compnents/Footer';
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <Wrapper>
         <Switch>
           <Route path="/home">
             <Header headerText="Home Page" to="/"></Header>
@@ -97,10 +98,15 @@ function App() {
           </Route>
           
         </Switch>
-      </div>
+      </Wrapper>
     </Router>
       
   );
 }
 
 export default App;
+
+const Wrapper = styled.div`
+  width: 100vw;
+  overflow: hidden;
+`

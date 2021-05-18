@@ -5,9 +5,11 @@ export default function Jumbotron(props) {
     
     return(
         <Container>
-            <Image src={props.frontImage}/>
+            <ImageWrapper style={props.background==="lighten" ? {opacity: 0.5, backgroundColor: "rgba(255,255,255)"} : {opacity: 1}}>
+                <Image src={props.frontImage} style={(props.headerText==="") ? {opacity: 1} : {opacity: 0.5}}/>
+            </ImageWrapper>
             <Logo>
-                <LogoImage src={props.mainLogo}/>
+                <LogoImage src={props.mainLogo} />
             </Logo>
             <Caption>
                 <Header>{props.headerText}</Header>
@@ -17,13 +19,19 @@ export default function Jumbotron(props) {
     )
 }
 
+const ImageWrapper = styled.div`
+
+    z-index: 1;
+    background-color: black;
+`
+
 const Caption =styled.div`
     display: block;
 `
 
 const Image = styled.img`
     width: 100vw;
-    background-color: blue;
+    background-color: black;
     object-fit: cover;
     height: 444px;
 `

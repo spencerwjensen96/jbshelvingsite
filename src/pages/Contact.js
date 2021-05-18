@@ -7,14 +7,10 @@ import Footer from '../compnents/Footer'
 //photos
 import frontImage from '../assets/images/HannahsPhotos/wood1copy.jpg'
 import mainLogo from '../assets/images/icons/Logo.png'
-import Button from '../compnents/Button'
+//import Button from '../compnents/Button'
 
 
 export default function Contact(props) { 
-
-    function sendEmail (){
-        alert("send email")
-    }
 
     return (
         <Wrapper>
@@ -22,7 +18,8 @@ export default function Contact(props) {
             frontImage={frontImage} 
             mainLogo={mainLogo} 
             headerText=""
-            subheaderText=""/>
+            subheaderText=""
+            background="lighten"/>
 
             <Content>
                 <Row>
